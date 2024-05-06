@@ -1,5 +1,5 @@
 const axios = require("axios");
-const baseURL = "http://localhost:8080/api/";
+const baseURL = "http://localhost:3001/api/";
 (async () => {
     try {
         // Function to call multiple APIs simultaneously

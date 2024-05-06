@@ -4,9 +4,9 @@
   "description": "This is an example of how to setup Sequelize and Express together in a project for NodeJS 10 and above.",
   "main": "index.js",
   "scripts": {
-    "start6": "node index.js",
-    "setup-example-db6": "node sqlite-example-database/setup.js",
-    "test6": "node test.js"
+    "start": "node index.js",
+    "setup-example-db": "node sqlite-example-database/setup.js",
+    "test": "node test.js"
   },
   "license": "MIT",
   "dependencies": {
@@ -17,9 +17,7 @@
     "@opentelemetry/resources": "^1.24.0",
     "@opentelemetry/sdk-trace-base": "^1.24.0",
     "axios": "^1.6.8",
-    "body-parser": "^1.20.2",
-    "express": "^4.19.2",
-    "morgan": "^1.10.0",
+    "hapi": "~16.1.0",
     "opentelemetry-instrumentation-sequelize": "^0.40.0",
     "sequelize": "^6.37.3",
     "sqlite3": "^5.1.7"
