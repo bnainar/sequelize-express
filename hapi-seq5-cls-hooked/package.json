@@ -1,0 +1,30 @@
+{
+  "name": "express-main-example",
+  "version": "0.0.0",
+  "description": "This is an example of how to setup Sequelize and Express together in a project for NodeJS 10 and above.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "setup-example-db": "node sqlite-example-database/setup.js",
+    "test": "node test.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@opentelemetry/api": "^1.8.0",
+    "@opentelemetry/auto-instrumentations-node": "^0.46.0",
+    "@opentelemetry/exporter-collector": "^0.25.0",
+    "@opentelemetry/instrumentation": "^0.51.0",
+    "@opentelemetry/resources": "^1.24.0",
+    "@opentelemetry/sdk-trace-base": "^1.24.0",
+    "axios": "^1.6.8",
+    "cls-bluebird": "^2.1.0",
+    "cls-hooked": "^4.2.2",
+    "continuation-local-storage": "^3.2.1",
+    "hapi": "~16.1.0",
+    "nanoid": "^5.0.7",
+    "opentelemetry-instrumentation-sequelize": "^0.40.0",
+    "sequelize": "^5.21.3",
+    "shimmer": "^1.2.1",
+    "sqlite3": "^5.1.7"
+  }
+}
