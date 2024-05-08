@@ -9,6 +9,9 @@ const sequelize = new Sequelize({
 	logQueryParameters: true,
 	benchmark: true,
 	logging: (...args) => {
+		if(args[2].traceId !== ns.get("traceId")) {
+			throw new Error("wrong context")
+		}
 		console.log(`${args[2].traceId ?? "nil"} ${args[0]}`)
 	}
 });
@@ -23,10 +26,6 @@ shimmer.wrap(sequelize, 'query', function (original) {
 	return returned;
   };
 });
-sequelize.addHook("beforeFind", (...args) => {
-	// // console.log(args)
-	// args[0].traceId 
-})
 const modelDefiners = [
 	require('./models/user.model'),
 	require('./models/instrument.model'),
