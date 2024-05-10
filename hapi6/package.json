@@ -14,6 +14,7 @@
     "@opentelemetry/auto-instrumentations-node": "^0.46.0",
     "@opentelemetry/exporter-collector": "^0.25.0",
     "@opentelemetry/instrumentation": "^0.51.0",
+    "@opentelemetry/instrumentation-undici": "^0.2.0",
     "@opentelemetry/resources": "^1.24.0",
     "@opentelemetry/sdk-trace-base": "^1.24.0",
     "axios": "^1.6.8",
